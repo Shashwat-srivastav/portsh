@@ -1,0 +1,674 @@
+/* Terminal-Inspired Experience Section Styles */
+
+/* Base Styles */
+.experience {
+    padding: var(--space-3xl) 0;
+    position: relative;
+    background-color: var(--color-bg-primary);
+}
+
+.experience .terminal-prompt {
+    color: var(--color-terminal-blue);
+    font-family: 'JetBrains Mono', monospace;
+    margin-right: 0.5rem;
+}
+
+.experience .cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.2em;
+    background-color: var(--color-terminal-blue);
+    margin-left: 0.2rem;
+    animation: blink 1s step-end infinite;
+    vertical-align: text-bottom;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Terminal Window for Experience Section */
+.terminal-window-experience {
+    background: rgba(10, 15, 30, 0.95);
+    border: 1px solid rgba(183, 148, 246, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(20, 25, 45, 0.9);
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(183, 148, 246, 0.1);
+}
+
+.terminal-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.control.close {
+    background-color: #ff5f56;
+}
+
+.control.minimize {
+    background-color: #ffbd2e;
+}
+
+.control.maximize {
+    background-color: #27c93f;
+}
+
+.terminal-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    width: 100%;
+}
+
+/* Terminal Content for Experience */
+.terminal-content-experience {
+    padding: 1.5rem;
+}
+
+.terminal-line {
+    display: flex;
+    margin-bottom: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Hero Experience Card in Terminal Style */
+.terminal-experience-hero {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(183, 148, 246, 0.15);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.terminal-experience-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-terminal-blue) 0%, transparent 100%);
+}
+
+.terminal-hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px dashed rgba(183, 148, 246, 0.1);
+    padding-bottom: 1rem;
+}
+
+.terminal-hero-title-section {
+    flex: 1;
+}
+
+.terminal-hero-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.3rem;
+}
+
+.terminal-hero-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.terminal-hero-role-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: rgba(183, 148, 246, 0.1);
+    color: var(--color-terminal-blue);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+/* Hero Metrics in Terminal Style */
+.terminal-hero-impact {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.terminal-metric-display {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 1.2rem;
+    position: relative;
+}
+
+.terminal-metric-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.terminal-metric-before {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0.3rem 0.6rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.terminal-metric-arrow {
+    font-size: 1.5rem;
+    color: var(--color-terminal-blue);
+    margin: 0 1rem;
+}
+
+.terminal-metric-after {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-terminal-blue);
+    padding: 0.3rem 0.6rem;
+    background: rgba(183, 148, 246, 0.1);
+    border-radius: 4px;
+}
+
+.terminal-metric-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Terminal Stats Grid */
+.terminal-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.terminal-stat {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.terminal-stat-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-terminal-blue);
+    margin-bottom: 0.3rem;
+}
+
+.terminal-stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Terminal Hero Details */
+.terminal-hero-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.terminal-detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.terminal-detail-icon {
+    color: var(--color-terminal-blue);
+    font-size: 1.2rem;
+}
+
+.terminal-detail-content {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    flex: 1;
+}
+
+.terminal-detail-content strong {
+    color: var(--color-terminal-blue);
+    font-weight: 600;
+}
+
+/* Tech Stack in Terminal Style */
+.terminal-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.terminal-tech-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(183, 148, 246, 0.1);
+    color: var(--color-terminal-blue);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+}
+
+/* Competition Cards in Terminal Style */
+.terminal-competitions {
+    margin: 2rem 0;
+}
+
+.terminal-subsection-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    color: var(--color-terminal-blue);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.terminal-subsection-title::before {
+    content: '$';
+    color: var(--color-terminal-blue);
+    margin-right: 0.5rem;
+}
+
+.terminal-competitions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.terminal-competition-card {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(183, 148, 246, 0.1);
+    border-radius: 6px;
+    padding: 1.2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-competition-card.featured {
+    border-color: rgba(183, 148, 246, 0.3);
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.terminal-competition-card.featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-terminal-blue) 0%, transparent 100%);
+}
+
+.terminal-competition-rank {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-terminal-blue);
+    background: rgba(183, 148, 246, 0.1);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    align-self: flex-start;
+    margin-bottom: 0.8rem;
+}
+
+.terminal-competition-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+}
+
+.terminal-competition-stats {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.terminal-stat-highlight {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-terminal-blue);
+}
+
+.terminal-stat-divider {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.terminal-stat-total {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.terminal-competition-desc {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+/* Terminal More Achievements */
+.terminal-more-achievements {
+    background: rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(183, 148, 246, 0.1);
+    border-radius: 6px;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.terminal-show-more-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--color-terminal-blue);
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: background 0.2s ease;
+}
+
+.terminal-show-more-btn:hover {
+    background: rgba(183, 148, 246, 0.03);
+}
+
+.terminal-show-more-btn i {
+    transition: transform 0.3s ease;
+}
+
+.terminal-more-achievements[open] .terminal-show-more-btn i {
+    transform: rotate(180deg);
+}
+
+.terminal-achievements-list {
+    padding: 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.terminal-achievement-item {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.8rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border-left: 3px solid var(--color-terminal-blue);
+}
+
+.terminal-achievement-item strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Terminal Credentials Section */
+.terminal-credentials {
+    margin-top: 2.5rem;
+}
+
+.terminal-credential-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.terminal-credential-card {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(183, 148, 246, 0.15);
+    border-radius: 6px;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.terminal-credential-header {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.terminal-credential-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(183, 148, 246, 0.1);
+    border-radius: 50%;
+    color: var(--color-terminal-blue);
+    font-size: 1.2rem;
+}
+
+.terminal-credential-icon.leadership-icon {
+    color: var(--color-terminal-orange);
+    background: rgba(255, 107, 27, 0.1);
+}
+
+.terminal-credential-title {
+    flex: 1;
+}
+
+.terminal-degree-title,
+.terminal-leadership-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.3rem;
+}
+
+.terminal-institution,
+.terminal-roles {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.terminal-credential-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: rgba(183, 148, 246, 0.1);
+    color: var(--color-terminal-blue);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+/* Timeline in Terminal Style */
+.terminal-education-timeline {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.terminal-timeline-year {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    white-space: nowrap;
+}
+
+.terminal-timeline-bar {
+    flex: 1;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.terminal-timeline-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 85%;
+    background: linear-gradient(90deg, var(--color-terminal-blue) 0%, var(--color-terminal-blue) 100%);
+    border-radius: 3px;
+}
+
+/* Credential Highlights in Terminal Style */
+.terminal-credential-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.terminal-highlight-item {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.terminal-highlight-icon {
+    color: var(--color-terminal-blue);
+    font-size: 1rem;
+    padding-top: 0.1rem;
+}
+
+.terminal-highlight-item.leadership-highlight .terminal-highlight-icon {
+    color: var(--color-terminal-orange);
+}
+
+.terminal-highlight-content {
+    flex: 1;
+}
+
+.terminal-highlight-content h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.3rem;
+}
+
+.terminal-highlight-content p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
+
+/* Impact Grid in Terminal Style */
+.terminal-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.terminal-impact-stat {
+    text-align: center;
+}
+
+.terminal-impact-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-terminal-orange);
+    margin-bottom: 0.2rem;
+}
+
+.terminal-impact-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .terminal-hero-impact {
+        flex-direction: column;
+    }
+    
+    .terminal-metric-display {
+        width: 100%;
+    }
+    
+    .terminal-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .terminal-competitions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .terminal-credential-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .terminal-content-experience {
+        padding: 1rem 0.5rem;
+    }
+    
+    .terminal-hero-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .terminal-hero-role-badge {
+        align-self: flex-start;
+    }
+    
+    .terminal-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .terminal-metric-visual {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .terminal-metric-arrow {
+        transform: rotate(90deg);
+    }
+}

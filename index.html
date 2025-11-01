@@ -1,0 +1,1680 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Singh - Portfolio</title>
+    <!-- Font preloading for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome icons with integrity for security -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Component styles -->
+    <link rel="stylesheet" href="credential-styles.css">
+    <link rel="stylesheet" href="nav-terminal-styles.css">
+    <link rel="stylesheet" href="home-terminal-styles.css">
+    <link rel="stylesheet" href="about-styles.css">
+    <link rel="stylesheet" href="about-terminal-styles.css">
+    <link rel="stylesheet" href="projects-styles.css">
+    <link rel="stylesheet" href="projects-terminal-styles.css">
+    <link rel="stylesheet" href="tech-stack-styles.css">
+    <link rel="stylesheet" href="skills-terminal-styles.css">
+    <link rel="stylesheet" href="experience-terminal-styles.css">
+    <link rel="stylesheet" href="contact-styles.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="loader-terminal">
+                    <div class="terminal-line">initializing experience<span class="cursor">_</span></div>
+                    <div class="terminal-line terminal-line-2">loading optimized portfolio<span class="cursor">_</span></div>
+                    <div class="terminal-line terminal-line-3">preparing interactive showcase<span class="cursor">_</span></div>
+                </div>
+            </div>
+            <div class="loader-progress">
+                <div class="loader-progress-bar"></div>
+            </div>
+            <div class="loader-brand">
+                <span>Shruti Singh</span>
+                <span class="loader-tagline">Data & Web Developer</span>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation - Terminal-Inspired Redesign -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="terminal-logo">
+                <span class="terminal-logo-prompt">></span>
+                <span class="terminal-logo-text">shruti.dev</span>
+            </a>
+            <ul class="terminal-nav-menu" id="terminal-menu">
+                <li class="terminal-nav-item"><a href="#home" class="terminal-nav-link active">Home</a></li>
+                <li class="terminal-nav-item"><a href="#about" class="terminal-nav-link">About</a></li>
+                <li class="terminal-nav-item"><a href="#skills" class="terminal-nav-link">Skills</a></li>
+                <li class="terminal-nav-item"><a href="#experience" class="terminal-nav-link">Experience</a></li>
+                <li class="terminal-nav-item"><a href="#projects" class="terminal-nav-link">Projects</a></li>
+                <li class="terminal-nav-item"><a href="#contact" class="terminal-nav-link">Contact</a></li>
+            </ul>
+            <button class="terminal-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Terminal-Inspired Redesign -->
+    <section id="home" class="hero">
+        <div class="container">
+            <!-- Terminal Window for Hero Section -->
+            <div class="terminal-window-hero">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
+                    </div>
+                    <div class="terminal-title">shruti@portfolio ~ welcome.sh</div>
+                </div>
+                
+                <div class="terminal-content-hero">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">./start_portfolio.sh</span>
+                    </div>
+                    
+                    <div class="terminal-line">
+                        <span class="terminal-command">Loading developer profile...</span>
+                    </div>
+                    
+                    <!-- Hero Main Content in Terminal Style -->
+                    <div class="terminal-hero-main">
+                        <div class="terminal-profile-section">
+                            <div class="terminal-hero-image">
+                                <!-- Professional headshot with fallback -->
+                                <img src="p23.png" alt="Shruti Singh" />
+                                <div class="terminal-status-badge">Available Now</div>
+                            </div>
+                            
+                            <div class="terminal-hero-intro">
+                                <h1 class="terminal-hero-name">Shruti Singh</h1>
+                                <p class="terminal-hero-role">Data & Web Developer specializing in Full-Stack Development & Data Engineering</p>
+                                
+                                <div class="terminal-highlight-metric">
+                                    <div class="terminal-highlight-value">10k+ Users</div>
+                                    <div class="terminal-highlight-label">Built responsive interfaces with 2-3s faster load times at 51 Insights</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">cat achievements.json | jq .impact_metrics</span>
+                    </div>
+                    
+                    <!-- Stats Grid in Terminal Style -->
+                    <div class="terminal-stats-grid">
+                        <div class="terminal-stat-card">
+                            <div class="terminal-stat-number">8.83 CGPA</div>
+                            <div class="terminal-stat-context">B.Tech CSE<br/>JSS Academy</div>
+                        </div>
+                        <div class="terminal-stat-card">
+                            <div class="terminal-stat-number">Top 5</div>
+                            <div class="terminal-stat-context">Impact-a-thon<br/>IIIT Delhi</div>
+                        </div>
+                        <div class="terminal-stat-card">
+                            <div class="terminal-stat-number">10k+</div>
+                            <div class="terminal-stat-context">users served<br/>real-time data</div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA in Terminal Style -->
+                    <div class="terminal-hero-cta">
+                        <a href="#projects" class="terminal-btn-hero terminal-btn-primary">
+                            <i class="fas fa-code"></i>
+                            <span>See My Work</span>
+                        </a>
+                        <a href="mailto:shrutisingh395867@gmail.com" class="terminal-btn-hero terminal-btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Footer Info in Terminal Style -->
+                    <div class="terminal-hero-footer">
+                        <div class="terminal-hero-meta">
+                            <span class="terminal-meta-item">Data & Web Developer</span>
+                            <span class="terminal-meta-divider">•</span>
+                            <span class="terminal-meta-item">React.js • Firebase • SQL</span>
+                            <span class="terminal-meta-divider">•</span>
+                            <span class="terminal-meta-item">Graduating 2025</span>
+                        </div>
+                        
+                        <div class="terminal-social-links">
+                            <a href="https://www.linkedin.com/in/shruti-singh" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/shrutisingh" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:shrutisingh395867@gmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-cursor"></span>
+                    </div>
+                    
+                    <div class="terminal-version-info">Portfolio v2.5.0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - Terminal-Inspired Redesign -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title"><span class="terminal-prompt">$</span> About<span class="cursor"></span></h2>
+            <!-- <p class="section-subtitle">cat developer_profile.json | jq</p> -->
+            
+            <!-- Terminal Window for About -->
+            <div class="terminal-window-about">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
+                    </div>
+                    <div class="terminal-title">shruti@portfolio ~ bio.sh</div>
+                </div>
+                
+                <div class="terminal-content-about">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">cat profile_summary.md</span>
+                    </div>
+                    
+                    <!-- Terminal About Grid -->
+                    <div class="terminal-about-grid">
+                        <!-- Professional Summary Column -->
+                        <div class="terminal-professional-summary">
+                            <h2 class="terminal-about-heading">Data & Web Developer with Full-Stack Expertise</h2>
+                            <p class="terminal-about-tagline">I build data-driven web applications and develop efficient data pipelines with a passion for creating scalable solutions</p>
+                            
+                            <p class="terminal-about-description">
+                                Results-driven Data & Web Developer specializing in React.js, Firebase, and data engineering. 
+                                Academic Scholar (Ranked 2nd in Data Science) with proven expertise in API integration, data pipelines, and building responsive interfaces for 10k+ users.
+                            </p>
+                            
+                            <div class="terminal-impact-metrics">
+                                <div class="terminal-impact-metric">
+                                    <div class="terminal-metric-header">
+                                        <div class="terminal-metric-icon">
+                                            <i class="fas fa-trophy"></i>
+                                        </div>
+                                        <div class="terminal-metric-label">Academic Achievement</div>
+                                    </div>
+                                    <div class="terminal-metric-value">Rank 2nd</div>
+                                    <div class="terminal-metric-context">Data Science Branch Scholar</div>
+                                </div>
+                                
+                                <div class="terminal-impact-metric">
+                                    <div class="terminal-metric-header">
+                                        <div class="terminal-metric-icon">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                        <div class="terminal-metric-label">Performance Optimization</div>
+                                    </div>
+                                    <div class="terminal-metric-value">2-3s</div>
+                                    <div class="terminal-metric-context">Page load time reduction at 51 Insights</div>
+                                </div>
+                                
+                                <div class="terminal-impact-metric">
+                                    <div class="terminal-metric-header">
+                                        <div class="terminal-metric-icon">
+                                            <i class="fas fa-brain"></i>
+                                        </div>
+                                        <div class="terminal-metric-label">Data Processing</div>
+                                    </div>
+                                    <div class="terminal-metric-value">85%</div>
+                                    <div class="terminal-metric-context">Query response accuracy improvement</div>
+                                </div>
+                                
+                                <div class="terminal-impact-metric">
+                                    <div class="terminal-metric-header">
+                                        <div class="terminal-metric-icon">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <div class="terminal-metric-label">Hackathon Achievement</div>
+                                    </div>
+                                    <div class="terminal-metric-value">Top 5</div>
+                                    <div class="terminal-metric-context">Impact-a-thon IIIT Delhi</div>
+                                </div>
+                            </div>
+                            
+                            <div class="terminal-about-cta">
+                                <a href="Shruti-Singh-Resume.pdf" class="terminal-btn" download>
+                                    <i class="fas fa-download"></i> Download Resume
+                                </a>
+                                <a href="#contact" class="terminal-btn outline">
+                                    <i class="fas fa-envelope"></i> Contact Me
+                                </a>
+                            </div>
+                            
+                            <div class="terminal-contact-info">
+                                <div class="terminal-contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>shrutisingh395867@gmail.com</span>
+                                </div>
+                                <div class="terminal-contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+91-9149243069</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Skills Display Column -->
+                        <div class="terminal-skills-display">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">ls -la ./technical_skills/</span>
+                            </div>
+                            
+                            <div class="terminal-skills-content">
+                                <h3 class="terminal-skills-title">Technical Expertise</h3>
+                                
+                                <div class="terminal-skill-category">
+                                    <div class="terminal-category-label">
+                                        <i class="fas fa-code"></i> Programming Languages
+                                    </div>
+                                    <div class="terminal-skill-tags">
+                                        <span class="terminal-skill-tag advanced">SQL</span>
+                                        <span class="terminal-skill-tag advanced">C++</span>
+                                        <span class="terminal-skill-tag advanced">JavaScript</span>
+                                        <span class="terminal-skill-tag">Java</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="terminal-skill-category">
+                                    <div class="terminal-category-label">
+                                        <i class="fas fa-robot"></i> Web Development & Cloud
+                                    </div>
+                                    <div class="terminal-skill-tags">
+                                        <span class="terminal-skill-tag advanced">React.js</span>
+                                        <span class="terminal-skill-tag">Node.js</span>
+                                        <span class="terminal-skill-tag">RESTful API</span>
+                                        <span class="terminal-skill-tag">Bootstrap</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="terminal-skill-category">
+                                    <div class="terminal-category-label">
+                                        <i class="fas fa-layer-group"></i> Databases
+                                    </div>
+                                    <div class="terminal-skill-tags">
+                                        <span class="terminal-skill-tag advanced">MySQL</span>
+                                        <span class="terminal-skill-tag">Firebase</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="terminal-skill-category">
+                                    <div class="terminal-category-label">
+                                        <i class="fas fa-tools"></i> Cloud & Hosting
+                                    </div>
+                                    <div class="terminal-skill-tags">
+                                        <span class="terminal-skill-tag">AWS (Basics)</span>
+                                        <span class="terminal-skill-tag">Firebase</span>
+                                        <span class="terminal-skill-tag">Netlify</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="terminal-skill-category">
+                                    <div class="terminal-category-label">
+                                        <i class="fas fa-microscope"></i> Tools & Methodologies
+                                    </div>
+                                    <div class="terminal-skill-tags">
+                                        <span class="terminal-skill-tag">Git</span>
+                                        <span class="terminal-skill-tag">GitHub</span>
+                                        <span class="terminal-skill-tag">VS Code</span>
+                                        <span class="terminal-skill-tag">Figma</span>
+                                        <span class="terminal-skill-tag">ServiceNow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-cursor"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section - Terminal-Inspired Redesign -->
+    <section id="skills" class="tech-stack-showcase">
+        <div class="container">
+            <h2 class="section-title"><span class="terminal-prompt">$</span> Skills<span class="cursor"></span></h2>
+            <!-- <p class="section-subtitle">Executing expertise.run --with-measurable-impact</p> -->
+            
+            <!-- Terminal Skills Dashboard -->
+            <div class="terminal-skills-dashboard">
+                <!-- Terminal Tabs -->
+                <div class="terminal-tabs">
+                    <div class="terminal-tab active" data-tab="production">Production Stack</div>
+                    <div class="terminal-tab" data-tab="proficiency">Skill Proficiency</div>
+                    <div class="terminal-tab" data-tab="competitive">Competitive</div>
+                </div>
+                
+                <!-- Terminal Window Main Content -->
+                <div class="terminal-window-skills">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <div class="terminal-title">shruti@portfolio ~ skills.sh</div>
+                    </div>
+                    
+                    <div class="terminal-content-skills">
+                        <!-- Production Stack Tab -->
+                        <div class="terminal-tab-content active" id="production-content">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">cat production_impact.json</span>
+                            </div>
+                            
+                            <!-- Tech Impact Cards in Terminal Style -->
+                            <div class="terminal-tech-grid">
+                                <!-- React + Firebase Card -->
+                                <div class="terminal-tech-card">
+                                    <div class="tech-card-header-terminal">
+                                        <div class="tech-icon-wrapper">
+                                            <i class="fas fa-react"></i>
+                                        </div>
+                                        <div class="tech-name-section">
+                                            <div class="tech-name">React.js + Firebase</div>
+                                            <div class="tech-category">Full-Stack Development</div>
+                                        </div>
+                                        <div class="tech-status production">PROD</div>
+                                    </div>
+                                    
+                                    <div class="tech-metrics-terminal">
+                                        <div class="metric-row">
+                                            <div class="metric-name">User Base:</div>
+                                            <div class="metric-value highlight">10k+ users</div>
+                                        </div>
+                                        <div class="metric-details">51 Insights responsive interfaces</div>
+                                    </div>
+                                    
+                                    <div class="tech-implementation">
+                                        <div class="implementation-header">Implementation:</div>
+                                        <div class="implementation-detail">
+                                            <span class="detail-bullet">→</span>
+                                            <span>Data-driven components development</span>
+                                        </div>
+                                        <div class="implementation-detail">
+                                            <span class="detail-bullet">→</span>
+                                            <span>Real-time data visualization dashboards</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- API Integration Card -->
+                                <div class="terminal-tech-card">
+                                    <div class="tech-card-header-terminal">
+                                        <div class="tech-icon-wrapper">
+                                            <i class="fas fa-cogs"></i>
+                                        </div>
+                                        <div class="tech-name-section">
+                                            <div class="tech-name">RESTful API</div>
+                                            <div class="tech-category">Data Integration</div>
+                                        </div>
+                                        <div class="tech-status production">PROD</div>
+                                    </div>
+                                    
+                                    <div class="tech-metrics-terminal">
+                                        <div class="metric-row">
+                                            <div class="metric-name">Performance:</div>
+                                            <div class="metric-value highlight">2-3s faster</div>
+                                        </div>
+                                        <div class="metric-details">Page load time optimization</div>
+                                    </div>
+                                    
+                                    <div class="tech-implementation">
+                                        <div class="implementation-header">Implementation:</div>
+                                        <div class="implementation-detail">
+                                            <span class="detail-bullet">→</span>
+                                            <span>Real-time structured data fetching</span>
+                                        </div>
+                                        <div class="implementation-detail">
+                                            <span class="detail-bullet">→</span>
+                                            <span>Optimized pipeline efficiency</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Data Analysis Card -->
+                                <div class="terminal-tech-card">
+                                    <div class="tech-card-header-terminal">
+                                        <div class="tech-icon-wrapper">
+                                            <i class="fas fa-brain"></i>
+                                        </div>
+                                        <div class="tech-name-section">
+                                            <div class="tech-name">SQL + Python</div>
+                                            <div class="tech-category">Data Engineering</div>
+                                        </div>
+                                        <div class="tech-status advanced">ADV</div>
+                                    </div>
+                                    
+                                    <div class="tech-metrics-terminal">
+                                        <div class="metric-row">
+                                            <div class="metric-name">Records:</div>
+                                            <div class="metric-value highlight">500+</div>
+                                        </div>
+                                        <div class="metric-details">Student data analysis system</div>
+                                    </div>
+                                    
+                                    <div class="tech-implementation">
+                                        <div class="implementation-header">Implementation:</div>
+                                        <div class="implementation-detail">
+                                            <span class="detail-bullet">→</span>
+                                            <span>Automated data pipelines (days to seconds)</span>
+                                        </div>
+                                        <div class="implementation-detail">
+                                            <span class="detail-bullet">→</span>
+                                            <span>Multi-mode analysis (semester/year/faculty)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Backend & Database Card -->
+                                <div class="terminal-tech-card">
+                                    <div class="tech-card-header-terminal">
+                                        <div class="tech-icon-wrapper">
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                        <div class="tech-name-section">
+                                            <div class="tech-name">Firebase + SQL</div>
+                                            <div class="tech-category">Database Management</div>
+                                        </div>
+                                        <div class="tech-status production">PROD</div>
+                                    </div>
+                                    
+                                    <div class="tech-metrics-terminal">
+                                        <div class="metric-row">
+                                            <div class="metric-name">Accuracy:</div>
+                                            <div class="metric-value highlight">85%</div>
+                                        </div>
+                                        <div class="metric-details">Legal query processing (NyayVedika)</div>
+                                    </div>
+                                    
+                                    <div class="tech-implementation">
+                                        <div class="implementation-header">Implementation:</div>
+                                        <div class="implementation-detail">
+                                            <span class="detail-bullet">→</span>
+                                            <span>Firebase backend data storage</span>
+                                        </div>
+                                        <div class="implementation-detail">
+                                            <span class="detail-bullet">→</span>
+                                            <span>SQL structured data management</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Skill Proficiency Tab -->
+                        <div class="terminal-tab-content" id="proficiency-content">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">ls -la --skills --sort=proficiency</span>
+                            </div>
+                            
+                            <!-- Skill Categories in Terminal Table Style -->
+                            <div class="terminal-skills-tables">
+                                <!-- Languages Table -->
+                                <div class="terminal-table">
+                                    <div class="table-header">
+                                        <div class="header-cell"><i class="fas fa-code"></i> LANGUAGES</div>
+                                        <div class="header-cell">PROFICIENCY</div>
+                                        <div class="header-cell">EXPERIENCE</div>
+                                    </div>
+                                    
+                                    <div class="table-row highlight">
+                                        <div class="cell">SQL</div>
+                                        <div class="cell">
+                                            <div class="proficiency-bar">
+                                                <div class="proficiency-level" style="width: 95%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">Production</div>
+                                    </div>
+                                    
+                                    <div class="table-row highlight">
+                                        <div class="cell">JavaScript</div>
+                                        <div class="cell">
+                                            <div class="proficiency-bar">
+                                                <div class="proficiency-level" style="width: 90%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">Full-Stack</div>
+                                    </div>
+                                    
+                                    <div class="table-row highlight">
+                                        <div class="cell">C++</div>
+                                        <div class="cell">
+                                            <div class="proficiency-bar">
+                                                <div class="proficiency-level" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">DSA</div>
+                                    </div>
+                                    
+                                    <div class="table-row">
+                                        <div class="cell">Java</div>
+                                        <div class="cell">
+                                            <div class="proficiency-bar">
+                                                <div class="proficiency-level" style="width: 75%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">Backend</div>
+                                    </div>
+                                    
+                                    <div class="table-row">
+                                        <div class="cell">Python</div>
+                                        <div class="cell">
+                                            <div class="proficiency-bar">
+                                                <div class="proficiency-level" style="width: 70%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">ML Models</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Frameworks Table -->
+                                <div class="terminal-table">
+                                    <div class="table-header">
+                                        <div class="header-cell"><i class="fas fa-layer-group"></i> FRAMEWORKS</div>
+                                        <div class="header-cell">PROFICIENCY</div>
+                                        <div class="header-cell">USE CASE</div>
+                                    </div>
+                                    
+                                    <div class="table-row highlight">
+                                        <div class="cell">React.js</div>
+                                        <div class="cell">
+                                            <div class="proficiency-bar">
+                                                <div class="proficiency-level" style="width: 95%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">Frontend Development</div>
+                                    </div>
+                                    
+                                    <div class="table-row highlight">
+                                        <div class="cell">Node.js</div>
+                                        <div class="cell">
+                                            <div class="proficiency-bar">
+                                                <div class="proficiency-level" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">Backend Services</div>
+                                    </div>
+                                    
+                                    <div class="table-row">
+                                        <div class="cell">Bootstrap</div>
+                                        <div class="cell">
+                                            <div class="proficiency-bar">
+                                                <div class="proficiency-level" style="width: 80%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">Responsive UI</div>
+                                    </div>
+                                    
+                                    <div class="table-row">
+                                        <div class="cell">Express.js</div>
+                                        <div class="cell">
+                                            <div class="proficiency-bar">
+                                                <div class="proficiency-level" style="width: 75%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">API Development</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Data Table -->
+                                <div class="terminal-table">
+                                    <div class="table-header">
+                                        <div class="header-cell"><i class="fas fa-database"></i> DATA & TOOLS</div>
+                                        <div class="header-cell">PROFICIENCY</div>
+                                        <div class="header-cell">APPLICATION</div>
+                                    </div>
+                                    
+                                    <div class="table-row highlight">
+                                        <div class="cell">MySQL</div>
+                                        <div class="cell">
+                                            <div class="proficiency-bar">
+                                                <div class="proficiency-level" style="width: 90%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">Databases</div>
+                                    </div>
+                                    
+                                    <div class="table-row">
+                                        <div class="cell">Firebase</div>
+                                        <div class="cell">
+                                            <div class="proficiency-bar">
+                                                <div class="proficiency-level" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">Cloud Database</div>
+                                    </div>
+                                    
+                                    <div class="table-row">
+                                        <div class="cell">Git/GitHub</div>
+                                        <div class="cell">
+                                            <div class="proficiency-bar">
+                                                <div class="proficiency-level" style="width: 90%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="cell">Version Control</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Competitive Tab -->
+                        <div class="terminal-tab-content" id="competitive-content">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">cat competitive_results.log</span>
+                            </div>
+                            
+                            <div class="competition-log">
+                                <div class="log-entry highlight">
+                                    <div class="timestamp">[2024-XX-XX]</div>
+                                    <div class="log-content">
+                                        <div class="competition-name">Impact-a-thon - IIIT Delhi</div>
+                                        <div class="result-indicator">
+                                            <span class="rank">TOP 5</span>
+                                            <span class="participants">National-level hackathon</span>
+                                            <span class="percentile">FINALIST</span>
+                                        </div>
+                                        <div class="competition-description">
+                                            Secured Top 5 position at Impact-a-thon IIIT Delhi and led team to qualify for Smart India Hackathon 2024.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="log-entry highlight">
+                                    <div class="timestamp">[2024-XX-XX]</div>
+                                    <div class="log-content">
+                                        <div class="competition-name">Academic Achievement</div>
+                                        <div class="result-indicator">
+                                            <span class="rank">RANK 2ND</span>
+                                            <span class="participants">Data Science Branch</span>
+                                            <span class="percentile">SCHOLAR</span>
+                                        </div>
+                                        <div class="competition-description">
+                                            Academic Scholar - Ranked 2nd in the Data Science Branch with CGPA 8.83.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="log-entry">
+                                    <div class="timestamp">[2024-XX-XX]</div>
+                                    <div class="log-content">
+                                        <div class="competition-name">Research Publication - IEEE</div>
+                                        <div class="result-indicator">
+                                            <span class="rank">PUBLISHED</span>
+                                            <span class="participants">IEEE Conference</span>
+                                        </div>
+                                        <div class="competition-description">
+                                            IEEE-published research contributor: "The Overfitting Dilemma: Exploring Solutions for Robust Classification Performance"
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="log-entry">
+                                    <div class="timestamp">[2023-XX-XX]</div>
+                                    <div class="log-content">
+                                        <div class="competition-name">Skills Assessment</div>
+                                        <div class="skill-areas">
+                                            <div class="skill-area">
+                                                <div class="skill-name">Full-Stack Development</div>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 95%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-area">
+                                                <div class="skill-name">Data Engineering</div>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 90%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skill-area">
+                                                <div class="skill-name">API Integration</div>
+                                                <div class="skill-bar">
+                                                    <div class="skill-level" style="width: 85%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-cursor"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section - Terminal-Inspired Redesign -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title"><span class="terminal-prompt">$</span> Experience<span class="cursor"></span></h2>
+            <!-- <p class="section-subtitle">cat professional_impact.log --stats</p> -->
+            
+            <!-- Terminal Window for Experience -->
+            <div class="terminal-window-experience">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
+                    </div>
+                    <div class="terminal-title">shruti@portfolio ~ experience.sh</div>
+                </div>
+                
+                <div class="terminal-content-experience">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">cat work_experience.json</span>
+                    </div>
+                    
+                    <!-- Hero Experience Card in Terminal Style -->
+                    <div class="terminal-experience-hero">
+                        <div class="terminal-hero-header">
+                            <div class="terminal-hero-title-section">
+                                <h3 class="terminal-hero-title">Data & Web Development at 51 Insights</h3>
+                                <span class="terminal-hero-date">Sept 2024 — Nov 2024</span>
+                            </div>
+                            <div class="terminal-hero-role-badge">Data & Web Developer Intern</div>
+                        </div>
+                        
+                        <div class="terminal-hero-impact">
+                            <div class="terminal-metric-display">
+                                <div class="terminal-metric-visual">
+                                    <span class="terminal-metric-before">Static</span>
+                                    <span class="terminal-metric-arrow">→</span>
+                                    <span class="terminal-metric-after">Real-Time Data</span>
+                                </div>
+                                <p class="terminal-metric-description">Built responsive interfaces for 10k+ users with 2-3s faster load times</p>
+                            </div>
+                            
+                            <div class="terminal-stats-grid">
+                                <div class="terminal-stat">
+                                    <div class="terminal-stat-value">10k+</div>
+                                    <div class="terminal-stat-label">Users served</div>
+                                </div>
+                                <div class="terminal-stat">
+                                    <div class="terminal-stat-value">2-3s</div>
+                                    <div class="terminal-stat-label">Load time reduced</div>
+                                </div>
+                                <div class="terminal-stat">
+                                    <div class="terminal-stat-value">API</div>
+                                    <div class="terminal-stat-label">Integration</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="terminal-hero-details">
+                            <div class="terminal-detail-item">
+                                <i class="fas fa-code terminal-detail-icon"></i>
+                                <div class="terminal-detail-content">
+                                    <strong>API Integration:</strong> Integrated APIs to fetch real-time structured data, improving pipeline efficiency for interactive dashboards.
+                                </div>
+                            </div>
+                            <div class="terminal-detail-item">
+                                <i class="fas fa-tachometer-alt terminal-detail-icon"></i>
+                                <div class="terminal-detail-content">
+                                    <strong>Performance Optimization:</strong> Optimized content delivery by developing data-driven components, reducing page load time by 2–3 seconds.
+                                </div>
+                            </div>
+                            <div class="terminal-detail-item">
+                                <i class="fas fa-users terminal-detail-icon"></i>
+                                <div class="terminal-detail-content">
+                                    <strong>Responsive Design:</strong> Built responsive interfaces for 10k+ users, ensuring seamless visualization of real-time data.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="terminal-tech-stack">
+                            <span class="terminal-tech-badge">React.js</span>
+                            <span class="terminal-tech-badge">JavaScript</span>
+                            <span class="terminal-tech-badge">RESTful API</span>
+                            <span class="terminal-tech-badge">Firebase</span>
+                            <span class="terminal-tech-badge">HTML/CSS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">cat project_experience.log</span>
+                    </div>
+                    
+                    <!-- Second Experience Card -->
+                    <div class="terminal-experience-hero">
+                        <div class="terminal-hero-header">
+                            <div class="terminal-hero-title-section">
+                                <h3 class="terminal-hero-title">Data Analysis Project Developer at JSSATEN</h3>
+                                <span class="terminal-hero-date">Oct 2023 — Feb 2024</span>
+                            </div>
+                            <div class="terminal-hero-role-badge">Project Developer</div>
+                        </div>
+                        
+                        <div class="terminal-hero-impact">
+                            <div class="terminal-metric-display">
+                                <div class="terminal-metric-visual">
+                                    <span class="terminal-metric-before">Days</span>
+                                    <span class="terminal-metric-arrow">→</span>
+                                    <span class="terminal-metric-after">Seconds</span>
+                                </div>
+                                <p class="terminal-metric-description">Automated academic data processing for 500+ student records</p>
+                            </div>
+                            
+                            <div class="terminal-stats-grid">
+                                <div class="terminal-stat">
+                                    <div class="terminal-stat-value">500+</div>
+                                    <div class="terminal-stat-label">Records processed</div>
+                                </div>
+                                <div class="terminal-stat">
+                                    <div class="terminal-stat-value">Auto</div>
+                                    <div class="terminal-stat-label">Data pipelines</div>
+                                </div>
+                                <div class="terminal-stat">
+                                    <div class="terminal-stat-value">3</div>
+                                    <div class="terminal-stat-label">Analysis modes</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="terminal-hero-details">
+                            <div class="terminal-detail-item">
+                                <i class="fas fa-chart-bar terminal-detail-icon"></i>
+                                <div class="terminal-detail-content">
+                                    <strong>Result Analysis System:</strong> Designed and developed a result analysis system for 500+ student records using HTML, CSS, JS, and Figma.
+                                </div>
+                            </div>
+                            <div class="terminal-detail-item">
+                                <i class="fas fa-robot terminal-detail-icon"></i>
+                                <div class="terminal-detail-content">
+                                    <strong>Automated Pipelines:</strong> Implemented automated academic data pipelines, reducing manual processing time from days to seconds.
+                                </div>
+                            </div>
+                            <div class="terminal-detail-item">
+                                <i class="fas fa-sliders-h terminal-detail-icon"></i>
+                                <div class="terminal-detail-content">
+                                    <strong>Flexible Analysis:</strong> Built semester, year, and faculty-based analysis modes, improving flexibility in academic evaluation.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="terminal-tech-stack">
+                            <span class="terminal-tech-badge">HTML</span>
+                            <span class="terminal-tech-badge">CSS</span>
+                            <span class="terminal-tech-badge">JavaScript</span>
+                            <span class="terminal-tech-badge">Figma</span>
+                            <span class="terminal-tech-badge">SQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">grep -r "achievements|awards" --sort-by=impact</span>
+                    </div>
+                    
+                    <!-- Competition Achievements in Terminal Style -->
+                    <div class="terminal-competitions">
+                        <h3 class="terminal-subsection-title">Achievements & Recognition</h3>
+                        
+                        <div class="terminal-competitions-grid">
+                            <!-- Impact-a-thon - Hero Achievement -->
+                            <div class="terminal-competition-card featured">
+                                <div class="terminal-competition-rank">Top 5</div>
+                                <div class="terminal-competition-name">Impact-a-thon, IIIT Delhi</div>
+                                <div class="terminal-competition-stats">
+                                    <span class="terminal-stat-highlight">Top 5</span>
+                                    <span class="terminal-stat-divider">•</span>
+                                    <span class="terminal-stat-total">SIH 2024 Qualified</span>
+                                </div>
+                                <p class="terminal-competition-desc">Secured Top 5 position at Impact-a-thon IIIT Delhi and led team to qualify for Smart India Hackathon 2024.</p>
+                            </div>
+                            
+                            <!-- Academic Excellence -->
+                            <div class="terminal-competition-card">
+                                <div class="terminal-competition-rank">Rank 2nd</div>
+                                <div class="terminal-competition-name">Academic Scholar - Data Science</div>
+                                <div class="terminal-competition-stats">
+                                    <span class="terminal-stat-highlight">Rank 2nd</span>
+                                    <span class="terminal-stat-divider">•</span>
+                                    <span class="terminal-stat-total">CGPA 8.83</span>
+                                </div>
+                                <p class="terminal-competition-desc">Academic Scholar - Ranked 2nd in the Data Science Branch at JSS Academy of Technical Education.</p>
+                            </div>
+                            
+                            <!-- Research Publication -->
+                            <div class="terminal-competition-card">
+                                <div class="terminal-competition-rank">Published</div>
+                                <div class="terminal-competition-name">IEEE Research Publication</div>
+                                <div class="terminal-competition-stats">
+                                    <span class="terminal-stat-highlight">Published</span>
+                                </div>
+                                <p class="terminal-competition-desc">IEEE-published research: "The Overfitting Dilemma: Exploring Solutions for Robust Classification Performance"</p>
+                            </div>
+                            
+                            <!-- Open Source -->
+                            <div class="terminal-competition-card">
+                                <div class="terminal-competition-rank">Contributor</div>
+                                <div class="terminal-competition-name">GSSoC Open Source</div>
+                                <div class="terminal-competition-stats">
+                                    <span class="terminal-stat-highlight">Merged PR</span>
+                                </div>
+                                <p class="terminal-competition-desc">Integrated a pull request to MonalikaPatnaik/UMatter, improving app performance during GSSoC open-contribution.</p>
+                            </div>
+                            
+                            <!-- Sports Achievement -->
+                            <div class="terminal-competition-card">
+                                <div class="terminal-competition-rank">Silver Medal</div>
+                                <div class="terminal-competition-name">AKTU Zonal Kabaddi</div>
+                                <div class="terminal-competition-stats">
+                                    <span class="terminal-stat-highlight">Silver</span>
+                                </div>
+                                <p class="terminal-competition-desc">Silver Medalist in the AKTU Zonal Kabaddi Tournament demonstrating leadership and teamwork.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional Achievements -->
+                        <details class="terminal-more-achievements">
+                            <summary class="terminal-show-more-btn">
+                                <span>cat more_achievements.txt</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </summary>
+                            <div class="terminal-achievements-list">
+                                <div class="terminal-achievement-item">
+                                    <strong>HackerRank SQL Certification</strong> — Demonstrated strong SQL proficiency through HackerRank certification
+                                </div>
+                                <div class="terminal-achievement-item">
+                                    <strong>Software Engineer Intern Certificate</strong> — Completed HackerRank Software Engineer Intern certification
+                                </div>
+                                <div class="terminal-achievement-item">
+                                    <strong>AWS Academy Cloud Foundations</strong> — Completed AWS Academy Cloud Foundations certification
+                                </div>
+                                <div class="terminal-achievement-item">
+                                    <strong>Generative AI Foundation</strong> — Completed Generative AI Foundation Course by Oracle University
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                    
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">ls -la education/ leadership/</span>
+                    </div>
+                    
+                    <!-- Education & Leadership in Terminal Style -->
+                    <div class="terminal-credentials">
+                        <div class="terminal-credential-container">
+                            <!-- Education Card -->
+                            <div class="terminal-credential-card">
+                                <div class="terminal-credential-header">
+                                    <div class="terminal-credential-icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="terminal-credential-title">
+                                        <h3 class="terminal-degree-title">B.Tech in Computer Science</h3>
+                                        <p class="terminal-institution">JSS Academy of Technical Education, Noida</p>
+                                    </div>
+                                    <div class="terminal-credential-badge">8.83 CGPA</div>
+                                </div>
+                                
+                                <div class="terminal-education-timeline">
+                                    <span class="terminal-timeline-year">2021</span>
+                                    <div class="terminal-timeline-bar">
+                                        <div class="terminal-timeline-progress"></div>
+                                    </div>
+                                    <span class="terminal-timeline-year">2025</span>
+                                </div>
+                                
+                                <div class="terminal-credential-highlights">
+                                    <div class="terminal-highlight-item">
+                                        <span class="terminal-highlight-icon"><i class="fas fa-code"></i></span>
+                                        <div class="terminal-highlight-content">
+                                            <h4>Coursework</h4>
+                                            <p>DBMS, OOP, DSA, Computer Networks, OS, System Design</p>
+                                        </div>
+                                    </div>
+                                    <div class="terminal-highlight-item">
+                                        <span class="terminal-highlight-icon"><i class="fas fa-trophy"></i></span>
+                                        <div class="terminal-highlight-content">
+                                            <h4>Achievements</h4>
+                                            <p>Rank 2nd in Data Science, Top 5 Impact-a-thon IIIT Delhi, IEEE Published Research</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Leadership Card -->
+                            <div class="terminal-credential-card">
+                                <div class="terminal-credential-header">
+                                    <div class="terminal-credential-icon leadership-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="terminal-credential-title">
+                                        <h3 class="terminal-leadership-title">Certifications & Skills</h3>
+                                        <p class="terminal-roles">Industry Recognized Credentials</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="terminal-impact-grid">
+                                    <div class="terminal-impact-stat">
+                                        <div class="terminal-impact-number">SQL</div>
+                                        <div class="terminal-impact-label">HackerRank</div>
+                                    </div>
+                                    <div class="terminal-impact-stat">
+                                        <div class="terminal-impact-number">AWS</div>
+                                        <div class="terminal-impact-label">Cloud Foundations</div>
+                                    </div>
+                                    <div class="terminal-impact-stat">
+                                        <div class="terminal-impact-number">Gen AI</div>
+                                        <div class="terminal-impact-label">Oracle</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="terminal-credential-highlights">
+                                    <div class="terminal-highlight-item leadership-highlight">
+                                        <span class="terminal-highlight-icon"><i class="fas fa-certificate"></i></span>
+                                        <div class="terminal-highlight-content">
+                                            <h4>Professional Certifications</h4>
+                                            <p>HackerRank SQL & Software Engineer Intern, AWS Academy Cloud Foundations, Oracle Gen AI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-cursor"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section - Terminal-Inspired Redesign -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title"><span class="terminal-prompt">$</span> Projects<span class="cursor"></span></h2>
+            <p class="section-subtitle">ls -la --projects --sort-by=impact</p>
+            
+            <!-- Terminal Window for Projects -->
+            <div class="terminal-window-projects">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
+                    </div>
+                    <div class="terminal-title">shruti@portfolio ~ projects.sh</div>
+                </div>
+                
+                <div class="terminal-content-projects">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">cat featured_project.json --pretty</span>
+                    </div>
+                    
+                    <!-- Featured Project: Financly in Terminal Style -->
+                    <div class="terminal-project-showcase">
+                        <div class="terminal-project-header">
+                            <div class="terminal-project-title-area">
+                                <div class="terminal-featured-tag">
+                                    <i class="fas fa-star"></i>
+                                    Featured Project - Full-Stack App
+                                </div>
+                                <h3 class="terminal-project-name">Financly - Personal Finance Tracker</h3>
+                                <p class="terminal-project-tagline">Full-stack data management system to track income, expenses, and balances with CSV import/export, sorting algorithms, and interactive dashboard visualizations.</p>
+                            </div>
+                            
+                            <div class="terminal-project-links">
+                                <a href="https://github.com/shrutisingh" target="_blank" class="terminal-project-link">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                                <a href="#contact" class="terminal-project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="terminal-project-body">
+                            <div class="terminal-project-details">
+                                <div class="terminal-problem-statement">
+                                    <h4 class="terminal-problem-title">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        The Problem
+                                    </h4>
+                                    <p class="terminal-problem-text">
+                                        Managing personal finances manually is time-consuming and error-prone. Users need a centralized system to track income, expenses, and balances with easy data import/export capabilities and visual insights into spending patterns.
+                                    </p>
+                                </div>
+                                
+                                <div class="terminal-solution-statement">
+                                    <h4 class="terminal-solution-title">
+                                        <i class="fas fa-lightbulb"></i>
+                                        The Solution
+                                    </h4>
+                                    <p class="terminal-solution-text">
+                                        Built a comprehensive data management system using React.js and Firebase for real-time synchronization. Integrated PapaParse for CSV import/export, implemented sorting algorithms for transaction datasets, and designed an intuitive dashboard with data visualization for personal finance metrics.
+                                    </p>
+                                </div>
+                                
+                                <div class="terminal-impact-section">
+                                    <h4 class="terminal-impact-title">
+                                        <i class="fas fa-chart-line"></i>
+                                        Key Features
+                                    </h4>
+                                    
+                                    <div class="terminal-impact-grid">
+                                        <div class="terminal-impact-card">
+                                            <div class="terminal-impact-value">CSV</div>
+                                            <div class="terminal-impact-label">Import/Export</div>
+                                        </div>
+                                        <div class="terminal-impact-card highlight">
+                                            <div class="terminal-impact-value">Real-time</div>
+                                            <div class="terminal-impact-label">Data sync</div>
+                                        </div>
+                                        <div class="terminal-impact-card">
+                                            <div class="terminal-impact-value">Smart</div>
+                                            <div class="terminal-impact-label">Sorting algorithms</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="terminal-tech-stack-grid">
+                                        <span class="terminal-tech-badge">JavaScript</span>
+                                        <span class="terminal-tech-badge">React.js</span>
+                                        <span class="terminal-tech-badge">Firebase</span>
+                                        <span class="terminal-tech-badge">SQL</span>
+                                        <span class="terminal-tech-badge">PapaParse</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="terminal-project-visual">
+                                <div class="terminal-code-header">
+                                    <div class="terminal-code-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="terminal-code-title">React Component - Transaction Management</div>
+                                </div>
+                                <pre class="terminal-code-content"><code>// Transaction data management with Firebase
+const TransactionManager = () => {
+  const [transactions, setTransactions] = useState([]);
+  
+  // Fetch real-time data from Firebase
+  useEffect(() => {
+    const unsubscribe = onSnapshot(
+      collection(db, "transactions"),
+      (snapshot) => {
+        const data = snapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        setTransactions(sortTransactions(data));
+      }
+    );
+    return () => unsubscribe();
+  }, []);
+  
+  // CSV Export with PapaParse
+  const exportToCSV = () => {
+    const csv = Papa.unparse(transactions);
+    downloadFile(csv, 'transactions.csv');
+  };
+  
+  return <Dashboard transactions={transactions} />;
+};</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">find . -name "*.project" | sort -r | head -3</span>
+                    </div>
+                    
+                    <!-- Secondary Projects Grid in Terminal Style -->
+                    <div class="terminal-project-grid">
+                        <!-- NyayVedika Project -->
+                        <div class="terminal-project-card">
+                            <div class="terminal-card-badge">
+                                <i class="fas fa-brain"></i>
+                                <span>AI-Powered</span>
+                                <div class="pulse-animation"></div>
+                            </div>
+                            
+                            <div class="terminal-card-header">
+                                <h3 class="terminal-card-title">NyayVedika: AI Legal Assistant</h3>
+                                <p class="terminal-card-subtitle">AI-driven legal data retrieval system with 85% query accuracy</p>
+                            </div>
+                            
+                            <div class="terminal-card-metrics">
+                                <div class="terminal-primary-metrics">
+                                    <div class="terminal-metric-item highlight">
+                                        <div class="terminal-metric-value">85%</div>
+                                        <div class="terminal-metric-chart">
+                                            <div class="terminal-chart-bar" style="width: 100%;"></div>
+                                        </div>
+                                        <div class="terminal-metric-label">Query Accuracy</div>
+                                    </div>
+                                    <div class="terminal-metric-item">
+                                        <div class="terminal-metric-chart">
+                                            <div class="terminal-chart-bar" style="width: 90%;"></div>
+                                        </div>
+                                        <div class="terminal-metric-label">500+ Queries Processed</div>
+                                    </div>
+                                    <div class="terminal-metric-item">
+                                        <div class="terminal-metric-value">AI</div>
+                                        <div class="terminal-metric-chart">
+                                            <div class="terminal-chart-bar" style="width: 85%;"></div>
+                                        </div>
+                                        <div class="terminal-metric-label">Smart Chatbot</div>
+                                    </div>
+                                </div>
+                                <div class="terminal-secondary-metrics">
+                                    <div class="terminal-speed-metric">
+                                        <div class="terminal-speed-label">Features</div>
+                                        <div class="terminal-speed-improvement">
+                                            <span>IPC/Constitution Info</span>
+                                            <i class="fas fa-gavel"></i>
+                                        </div>
+                                    </div>
+                                    <div class="terminal-memory-metric">
+                                        <div class="terminal-memory-label">Integration</div>
+                                        <div class="terminal-memory-improvement">
+                                            <span>Firebase + Python ML</span>
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="terminal-card-tech">
+                                <span class="terminal-tech-chip">JavaScript</span>
+                                <span class="terminal-tech-chip">React.js</span>
+                                <span class="terminal-tech-chip">Firebase</span>
+                                <span class="terminal-tech-chip">Python</span>
+                                <span class="terminal-tech-chip">ML Model</span>
+                                <span class="terminal-tech-chip">SQL</span>
+                            </div>
+                            
+                            <div class="terminal-card-links">
+                                <a href="https://github.com/shrutisingh" target="_blank" class="terminal-card-btn">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                                <a href="#contact" class="terminal-card-btn outline">
+                                    <i class="fas fa-play"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Student Result Analysis Project -->
+                        <div class="terminal-project-card">
+                            <div class="terminal-card-badge professional">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Data Analysis</span>
+                                <div class="pulse-animation"></div>
+                            </div>
+                            
+                            <div class="terminal-card-header">
+                                <h3 class="terminal-card-title">Student Result Analysis System</h3>
+                                <p class="terminal-card-subtitle">Automated academic data pipeline for 500+ student records</p>
+                            </div>
+                            
+                            <div class="terminal-card-metrics">
+                                <div class="terminal-performance-metric">
+                                    <div class="terminal-performance-header">Performance Impact</div>
+                                    <div class="terminal-loading-time">
+                                        <div class="terminal-time-comparison">
+                                            <div class="terminal-time before">Days</div>
+                                            <div class="terminal-time-arrow">→</div>
+                                            <div class="terminal-time after">Seconds</div>
+                                        </div>
+                                        <div class="terminal-time-label">Processing Time Reduction</div>
+                                        <div class="terminal-optimization-detail">Automated data pipelines for 500+ records</div>
+                                    </div>
+                                </div>
+                                <div class="terminal-achievement-pills">
+                                    <div class="terminal-pill">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>Semester Analysis</span>
+                                    </div>
+                                    <div class="terminal-pill">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>Year-wise Reports</span>
+                                    </div>
+                                    <div class="terminal-pill">
+                                        <i class="fas fa-users"></i>
+                                        <span>Faculty Analytics</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="terminal-card-tech">
+                                <span class="terminal-tech-chip">HTML</span>
+                                <span class="terminal-tech-chip">CSS</span>
+                                <span class="terminal-tech-chip">JavaScript</span>
+                                <span class="terminal-tech-chip">Figma</span>
+                                <span class="terminal-tech-chip">SQL</span>
+                            </div>
+                            
+                            <div class="terminal-card-links">
+                                <a href="https://github.com/shrutisingh" target="_blank" class="terminal-card-btn">
+                                    <i class="fab fa-github"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Placeholder for third project -->
+                        <div class="terminal-project-card">
+                            <div class="terminal-card-badge technical">
+                                <i class="fas fa-trophy"></i>
+                                <span>Achievements</span>
+                                <div class="pulse-animation"></div>
+                            </div>
+                            
+                            <div class="terminal-card-header">
+                                <h3 class="terminal-card-title">Competitive Programming & Research</h3>
+                                <p class="terminal-card-subtitle">Academic excellence and technical contributions</p>
+                            </div>
+                            
+                            <div class="terminal-card-metrics">
+                                <div class="terminal-dual-metric">
+                                    <div class="terminal-dual-metric-item">
+                                        <div class="terminal-dual-metric-value">
+                                            <span class="large-value">Top 5</span>
+                                            <span class="metric-icon"><i class="fas fa-trophy"></i></span>
+                                        </div>
+                                        <div class="terminal-dual-metric-label">Impact-a-thon</div>
+                                        <div class="terminal-dual-metric-detail">IIIT Delhi</div>
+                                    </div>
+                                    <div class="terminal-dual-metric-divider"></div>
+                                    <div class="terminal-dual-metric-item highlight">
+                                        <div class="terminal-dual-metric-value">
+                                            <span class="large-value">Rank 2</span>
+                                            <span class="metric-icon"><i class="fas fa-medal"></i></span>
+                                        </div>
+                                        <div class="terminal-dual-metric-label">Academic Scholar</div>
+                                        <div class="terminal-dual-metric-detail">Data Science Branch</div>
+                                    </div>
+                                </div>
+                                <div class="terminal-tech-detail">
+                                    <div class="terminal-tech-detail-item">
+                                        <span class="terminal-detail-icon"><i class="fas fa-book"></i></span>
+                                        <span class="terminal-detail-text">IEEE Published Research</span>
+                                    </div>
+                                    <div class="terminal-tech-detail-item">
+                                        <span class="terminal-detail-icon"><i class="fas fa-code"></i></span>
+                                        <span class="terminal-detail-text">LeetCode Problem Solving</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="terminal-card-tech specialized">
+                                <span class="terminal-tech-chip">C++</span>
+                                <span class="terminal-tech-chip">DSA</span>
+                                <span class="terminal-tech-chip">Python</span>
+                                <span class="terminal-tech-chip">ML</span>
+                            </div>
+                            
+                            <div class="terminal-card-footer">
+                                <div class="terminal-additional-projects">
+                                    <div class="terminal-additional-header">Connect & Explore:</div>
+                                    <div class="terminal-mini-projects">
+                                        <a href="https://leetcode.com/shrutisingh" target="_blank" class="terminal-mini-link">
+                                            <span>LeetCode Profile</span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                        <a href="https://github.com/shrutisingh" target="_blank" class="terminal-mini-link">
+                                            <span>More Projects on GitHub</span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-cursor"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title"><span class="terminal-prompt">$</span> Connect<span class="cursor"></span></h2>
+            
+            <!-- Terminal-inspired Status Bar -->
+            <div class="terminal-status-bar">
+                <div class="status-indicator active">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Available for Hire</span>
+                </div>
+                <div class="status-details">
+                    <span class="status-detail"><i class="fas fa-calendar"></i> Dec 2025</span>
+                    <span class="status-detail"><i class="fas fa-clock"></i> 24h Response</span>
+                    <span class="status-detail"><i class="fas fa-check-circle"></i> Interview Ready</span>
+                </div>
+            </div>
+            
+            <!-- Terminal Contact Interface -->
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
+                    </div>
+                    <div class="terminal-title">shruti@portfolio ~ connect.sh</div>
+                </div>
+                
+                <div class="terminal-content">
+                    <!-- Employment Status -->
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">cat employment_status.txt</span>
+                    </div>
+                    <div class="terminal-output status-output">
+                        <div class="status-highlight">
+                            <span class="status-key">STATUS:</span>
+                            <span class="status-value">Seeking Data Engineer/Full-Stack Developer positions</span>
+                        </div>
+                        <div class="status-highlight">
+                            <span class="status-key">TARGET:</span>
+                            <span class="status-value">Product companies focusing on data-driven solutions</span>
+                        </div>
+                        <div class="status-highlight">
+                            <span class="status-key">LOCATION:</span>
+                            <span class="status-value">Noida, Uttar Pradesh (Open to remote/hybrid)</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">./contact --list-all</span>
+                    </div>
+                    <div class="terminal-output">
+                        <div class="contact-grid">
+                            <a href="mailto:shrutisingh395867@gmail.com" class="contact-item primary">
+                                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="contact-details">
+                                    <span class="contact-type">EMAIL</span>
+                                    <span class="contact-value">shrutisingh395867@gmail.com</span>
+                                </div>
+                                <div class="contact-badge">Primary</div>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/shruti-singh" target="_blank" class="contact-item">
+                                <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                                <div class="contact-details">
+                                    <span class="contact-type">LINKEDIN</span>
+                                    <span class="contact-value">shruti-singh</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://github.com/shrutisingh" target="_blank" class="contact-item">
+                                <div class="contact-icon"><i class="fab fa-github"></i></div>
+                                <div class="contact-details">
+                                    <span class="contact-type">GITHUB</span>
+                                    <span class="contact-value">shrutisingh</span>
+                                </div>
+                            </a>
+                            
+                            <a href="tel:+919149243069" class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                                <div class="contact-details">
+                                    <span class="contact-type">PHONE</span>
+                                    <span class="contact-value">+91 9149243069</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://leetcode.com/shrutisingh" target="_blank" class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-code"></i></div>
+                                <div class="contact-details">
+                                    <span class="contact-type">LEETCODE</span>
+                                    <span class="contact-value">shrutisingh</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Skills Summary -->
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">cat highlights.json</span>
+                    </div>
+                    <div class="terminal-output code-output">
+                        <pre><code>{
+  "academic_rank": "Rank 2nd - Data Science Branch (CGPA 8.83)",
+  "performance_boost": "2-3s page load time reduction",
+  "data_accuracy": "85% query response accuracy improvement",
+  "core_skill": "Building data-driven web applications"
+}</code></pre>
+                    </div>
+                    
+                    <!-- Call to Action -->
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">./download_resume</span>
+                    </div>
+                    <div class="terminal-output action-output">
+                        <a href="Shruti-Singh-Resume.pdf" class="terminal-button download" download>
+                            <i class="fas fa-file-download"></i>
+                            <span>Download Resume</span>
+                            <span class="button-description">PDF • Last updated Nov 2024</span>
+                        </a>
+                    </div>
+                    
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-command">./schedule_meeting</span>
+                    </div>
+                    <div class="terminal-output action-output">
+                        <a href="mailto:shrutisingh395867@gmail.com?subject=Interview%20Request&body=Hi%20Shruti,%0A%0AI'd%20like%20to%20schedule%20an%20interview%20to%20discuss%20a%20potential%20opportunity.%0A%0ABest%20regards," class="terminal-button email">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Schedule Interview</span>
+                            <span class="button-description">Response within 24 hours guaranteed</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Blinking Cursor Line -->
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-cursor"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Shruti Singh</h3>
+                    <p>Building data-driven web applications that scale</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://linkedin.com/in/shruti-singh" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/shrutisingh" target="_blank">GitHub</a>
+                        <a href="mailto:shrutisingh395867@gmail.com">Email</a>
+                        <a href="tel:+919149243069">Phone</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Achievements</h4>
+                        <a href="#experience">Top 5 Impact-a-thon</a>
+                        <a href="#experience">Rank 2nd - Data Science</a>
+                        <a href="#experience">IEEE Published Research</a>
+                        <a href="Shruti-Singh-Resume.pdf" download>Download Resume</a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shruti Singh. Built with precision and purpose.</p>
+                <p>Designed for impact • Optimized for recruiters • Powered by <i class="fas fa-heart"></i> for code</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

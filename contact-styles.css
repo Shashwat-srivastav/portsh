@@ -1,0 +1,442 @@
+/* Terminal-Inspired Contact Section Styles */
+
+.contact {
+    padding: var(--space-3xl) 0;
+    position: relative;
+    background-color: var(--color-bg-primary);
+}
+
+.contact .terminal-prompt {
+    color: var(--color-terminal-blue);
+    font-family: 'JetBrains Mono', monospace;
+    margin-right: 0.5rem;
+}
+
+.contact .cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.2em;
+    background-color: var(--color-terminal-blue);
+    margin-left: 0.2rem;
+    animation: blink 1s step-end infinite;
+    vertical-align: text-bottom;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Terminal Status Bar */
+.terminal-status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10, 17, 40, 0.8);
+    border: 1px solid rgba(77, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    margin: 2rem 0;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-indicator.active .status-dot {
+    background-color: #4dff91;
+    box-shadow: 0 0 8px rgba(77, 255, 145, 0.6);
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-terminal-blue);
+    position: relative;
+}
+
+.status-indicator.active .status-dot::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(77, 255, 145, 0.5);
+    animation: pulse 2s infinite;
+    left: 0;
+    top: 0;
+}
+
+.status-text {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #4dff91;
+}
+
+.status-details {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.status-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.status-detail i {
+    color: var(--color-terminal-blue);
+    font-size: 0.8rem;
+}
+
+/* Terminal Window */
+.terminal-window {
+    background: rgba(10, 15, 30, 0.95);
+    border: 1px solid rgba(77, 255, 255, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(20, 25, 45, 0.9);
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(77, 255, 255, 0.1);
+}
+
+.terminal-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.control.close {
+    background-color: #ff5f56;
+}
+
+.control.minimize {
+    background-color: #ffbd2e;
+}
+
+.control.maximize {
+    background-color: #27c93f;
+}
+
+.terminal-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    width: 100%;
+}
+
+.terminal-content {
+    padding: 1.5rem;
+}
+
+.terminal-line {
+    display: flex;
+    margin-bottom: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.terminal-command {
+    color: rgba(255, 255, 255, 0.9);
+    margin-left: 0.5rem;
+}
+
+.terminal-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.2em;
+    background-color: var(--color-terminal-blue);
+    animation: blink 1s step-end infinite;
+}
+
+.terminal-output {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
+/* Status Output */
+.status-output {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.status-highlight {
+    display: flex;
+    gap: 1rem;
+}
+
+.status-key {
+    color: var(--color-terminal-blue);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    min-width: 100px;
+}
+
+.status-value {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Contact Grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--color-terminal-blue);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+}
+
+.contact-item:hover::before {
+    opacity: 1;
+}
+
+.contact-item.primary {
+    grid-column: span 2;
+    background: rgba(77, 255, 255, 0.05);
+}
+
+.contact-item.primary::before {
+    background: var(--color-terminal-blue);
+    opacity: 1;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.contact-item.primary .contact-icon {
+    background: rgba(77, 255, 255, 0.15);
+}
+
+.contact-item:hover .contact-icon {
+    background: rgba(77, 255, 255, 0.2);
+}
+
+.contact-icon i {
+    color: var(--color-terminal-blue);
+    font-size: 1.1rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-type {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0.2rem;
+}
+
+.contact-value {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+}
+
+.contact-item.primary .contact-value {
+    color: var(--color-terminal-blue);
+}
+
+.contact-badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: rgba(77, 255, 255, 0.1);
+    border: 1px solid rgba(77, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+    color: var(--color-terminal-blue);
+}
+
+/* Code Output */
+.code-output {
+    padding: 0;
+    overflow: hidden;
+}
+
+.code-output pre {
+    margin: 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.code-output code {
+    font-family: 'JetBrains Mono', monospace;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+}
+
+.code-output .property {
+    color: var(--color-terminal-purple);
+}
+
+.code-output .string {
+    color: var(--color-terminal-orange);
+}
+
+/* Action Buttons */
+.action-output {
+    padding: 0;
+}
+
+.terminal-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    border-left: 3px solid;
+}
+
+.terminal-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.terminal-button:hover::before {
+    transform: translateX(100%);
+}
+
+.terminal-button.download {
+    border-color: var(--color-terminal-blue);
+}
+
+.terminal-button.email {
+    border-color: var(--color-terminal-orange);
+}
+
+.terminal-button i {
+    font-size: 1.5rem;
+}
+
+.terminal-button.download i {
+    color: var(--color-terminal-blue);
+}
+
+.terminal-button.email i {
+    color: var(--color-terminal-orange);
+}
+
+.terminal-button span {
+    display: block;
+}
+
+.terminal-button span:first-of-type {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1rem;
+}
+
+.button-description {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 0.25rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-item.primary {
+        grid-column: span 1;
+    }
+    
+    .status-details {
+        display: none;
+    }
+    
+    .terminal-status-bar {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .terminal-content {
+        padding: 1rem 0.5rem;
+    }
+    
+    .terminal-line {
+        font-size: 0.85rem;
+    }
+    
+    .terminal-button {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+}
